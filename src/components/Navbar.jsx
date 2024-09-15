@@ -160,14 +160,24 @@ const Navbar = () => {
         <div className="col-12">
           <nav className="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
             <div className="container-fluid px-0">
-              <a href="https://www.creative-tim.com/product/material-kit">
-                <img
-                  src="./assets/img/kbv-logo-1.png"
-                  className="mb-1"
-                  alt="main_logo"
-                  style={{ height: "45px", width: "45px" }}
-                />
-              </a>
+              <img
+                src="./assets/img/kbv-logo-1.png"
+                className="mb-1"
+                alt="main_logo"
+                style={{ height: "45px", width: "45px" }}
+              />
+              <img
+                src="./assets/img/hope-logo.png"
+                className="mb-1"
+                alt="main_logo"
+                style={{
+                  height: "45px",
+                  width: "100px",
+                  marginLeft: "16px",
+                  marginTop: "6px",
+                }}
+              />
+
               <a
                 className="navbar-brand font-weight-bolder ms-sm-3"
                 href="#"
@@ -175,6 +185,7 @@ const Navbar = () => {
                 title="Designed and Coded by Creative Tim"
                 data-placement="bottom"
                 target="_blank"
+                style={{ fontSize: "24px" }}
               >
                 KBV
               </a>

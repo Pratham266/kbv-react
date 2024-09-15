@@ -34,7 +34,7 @@ const values = {
 };
 const educationalFeatures = {
   id: "feature",
-  title: "Educational featurs",
+  title: "Educational features",
   tagline:
     "Comprehensive Support for Holistic Learning. Empowering Students with Specialized Educational Features.",
   list: [
@@ -309,7 +309,7 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-6 my-auto">
-                <h3 className="mt-5 mt-lg-0">Educational featurs</h3>
+                <h3 className="mt-5 mt-lg-0">Educational features</h3>
                 <p className="pe-5">
                   Comprehensive Support for Holistic Learning. Empowering
                   Students with Specialized Educational Features.

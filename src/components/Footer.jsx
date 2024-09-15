@@ -106,7 +106,7 @@ const Footer = () => {
         <div className=" row">
           <div className="col-md-3 mb-4 ms-auto">
             <div>
-              <a href="https://www.creative-tim.com/product/material-kit">
+              <a href="javascript:;">
                 <img
                   src="./assets/img/kbv-logo-1.png"
                   className="mb-1"
@@ -126,7 +126,7 @@ const Footer = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
-                    href="https://www.facebook.com/CreativeTim"
+                    href="javascript:;"
                     target="_blank"
                   >
                     <i className="fab fa-facebook text-lg opacity-8"></i>
@@ -135,7 +135,7 @@ const Footer = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
-                    href="https://twitter.com/creativetim"
+                    href="javascript:;"
                     target="_blank"
                   >
                     <i className="fab fa-twitter text-lg opacity-8"></i>
@@ -144,7 +144,7 @@ const Footer = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
-                    href="https://dribbble.com/creativetim"
+                    href="javascript:;"
                     target="_blank"
                   >
                     <i className="fab fa-dribbble text-lg opacity-8"></i>
@@ -153,7 +153,7 @@ const Footer = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
-                    href="https://github.com/creativetimofficial"
+                    href="javascript:;"
                     target="_blank"
                   >
                     <i className="fab fa-github text-lg opacity-8"></i>
@@ -162,7 +162,7 @@ const Footer = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
-                    href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
+                    href="javascript:;"
                     target="_blank"
                   >
                     <i className="fab fa-youtube text-lg opacity-8"></i>

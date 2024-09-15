@@ -80,12 +80,19 @@ const Volunteers = () => {
                           <label>Select Volunteer Role</label>
                           <select className="form-control">
                             <option value="">-- Select Role --</option>
-                            <option value="mentor">Mentor</option>
-                            <option value="tutor">Tutor</option>
-                            <option value="event-coordinator">
-                              Event Coordinator
+                            <option value="Fund raising ">Fund raising</option>
+                            <option value="Arranging and  conducting field trips / tour">
+                              Arranging and conducting field trips / tour
                             </option>
-                            <option value="fundraiser">Fundraiser</option>
+                            <option value="Designing  and  maintaining the website">
+                              Designing and maintaining the website.
+                            </option>
+                            <option value="Cataloging the  library">
+                              Cataloging the library
+                            </option>
+                            <option value="Research &  survey work.">
+                              Research & survey work.
+                            </option>
                           </select>
                         </div>
 

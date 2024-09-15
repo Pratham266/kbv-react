@@ -230,7 +230,7 @@ const Activite = () => {
                 <div className="mt-n8 mt-md-n9 text-center">
                   <img
                     className="avatar avatar-xxl shadow-xl position-relative z-index-2"
-                    src="../assets/img/school/activities/activitylogo.webp"
+                    src="../assets/img/kbv-logo-1.png"
                     alt="bruce"
                     loading="lazy"
                   />

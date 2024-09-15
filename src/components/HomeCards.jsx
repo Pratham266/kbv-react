@@ -1,9 +1,66 @@
 import React from "react";
 import "./css/homecard.scss";
+import { useNavigate } from "react-router-dom";
+
+const visitors = [
+  {
+    id: 1,
+    img: "./assets/img/visitors/vs1.jpeg",
+  },
+  {
+    id: 2,
+    img: "./assets/img/visitors/vs2.JPG",
+  },
+  {
+    id: 3,
+    img: "./assets/img/visitors/vs3.jpg",
+  },
+  {
+    id: 4,
+    img: "./assets/img/visitors/lunch.jpeg",
+  },
+];
 
 const HomeCards = () => {
+  const navigate = useNavigate();
+
+  const goToAboutUs = () => {
+    navigate("/about");
+  };
   return (
     <div className="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+      <section className="my-5">
+        <div class="row">
+          {visitors.map((itm) => (
+            <div class="col-lg-3 col-sm-6" key={itm.id}>
+              <div class="card card-plain">
+                <div class="card-header p-0 position-relative">
+                  <a class="d-block blur-shadow-image">
+                    <img
+                      src={itm.img}
+                      alt={`visitor-img-${itm.id}`}
+                      className="img-fluid shadow border-radius-lg"
+                      loading="lazy"
+                      style={{ height: "227px" }}
+                    />
+                  </a>
+                </div>
+                {/* <div class="card-body px-0">
+              <h5>
+                <a href="javascript:;" class="text-dark font-weight-bold">
+                  Rover raised $65 million
+                </a>
+              </h5>
+              <p>
+                Finding temporary housing for your dog should be as easy as
+                renting an Airbnb. That’s the idea behind Rover ...
+              </p>
+            </div> */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* Our Vision */}
 
       <section className="my-5">
@@ -19,9 +76,8 @@ const HomeCards = () => {
               </p>
               <div className="github-buttons">
                 <a
-                  href="#"
-                  target="_blank"
                   className="btn bg-gradient-primary mb-5 mb-sm-0"
+                  onClick={goToAboutUs}
                 >
                   Know More
                 </a>
@@ -31,7 +87,7 @@ const HomeCards = () => {
               </div>
             </div>
             <div className="col-md-5 col-12 my-auto">
-              <a href="#">
+              <a>
                 <img
                   className="w-100 border-radius-lg shadow-lg"
                   src={"./assets/img/school/home/nation builder award.jpg"}
@@ -59,9 +115,8 @@ const HomeCards = () => {
               </p>
               <div className="github-buttons">
                 <a
-                  href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2"
-                  target="_blank"
                   className="btn bg-gradient-primary mb-5 mb-sm-0"
+                  onClick={goToAboutUs}
                 >
                   Know More
                 </a>
@@ -71,7 +126,7 @@ const HomeCards = () => {
               </div>
             </div>
             <div className="col-md-5 col-12 my-auto">
-              <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2">
+              <a>
                 <img
                   className="w-100 border-radius-lg shadow-lg"
                   src={
@@ -294,8 +349,9 @@ const HomeCards = () => {
                   vocational training, and comprehensive care
                 </p>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit"
+                  href="#"
                   className="text-white icon-move-right"
+                  onClick={goToAboutUs}
                 >
                   more
                   <i className="fas fa-arrow-right text-sm ms-1"></i>
