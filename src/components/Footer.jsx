@@ -67,6 +67,36 @@ const activities = [
     path: "/activite/theater-arts",
     tagline: "Drama and Expression",
   },
+  {
+    id: 12,
+    title: "Lunch Time",
+    path: "/activite/lunch-time",
+    tagline: "Relax and Socialize",
+  },
+  {
+    id: 13,
+    title: "Plantation",
+    path: "/activite/plantation",
+    tagline: "Gardening and Sustainability",
+  },
+  {
+    id: 14,
+    title: "Sports Day",
+    path: "/activite/sports-day",
+    tagline: "Fun and Fitness",
+  },
+  {
+    id: 15,
+    title: "Sport Time",
+    path: "/activite/sport-time",
+    tagline: "Active Play and Teamwork",
+  },
+  {
+    id: 16,
+    title: "Corona Activity",
+    path: "/activite/corona-time",
+    tagline: "Corona Awareness Activity",
+  },
 ];
 
 const Footer = () => {
@@ -167,7 +197,7 @@ const Footer = () => {
             <div>
               <h6 className="text-sm">Activites</h6>
               <ul className="flex-column ms-n3 nav">
-                {activities.slice(0, 5).map((item) => (
+                {activities.slice(0, 8).map((item) => (
                   <li className="nav-item" key={item.id}>
                     <Link className="nav-link" to={`/activite/${item.id}`}>
                       {item.title}
@@ -181,7 +211,7 @@ const Footer = () => {
             <div>
               <h6 className="text-sm">Activites</h6>
               <ul className="flex-column ms-n3 nav">
-                {activities.slice(5).map((item) => (
+                {activities.slice(8).map((item) => (
                   <li className="nav-item" key={item.id}>
                     <Link className="nav-link" to={`/activite/${item.id}`}>
                       {item.title}

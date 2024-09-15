@@ -25,6 +25,9 @@ const activities = [
       "../assets/img/activity/art/a1.jpg",
       "../assets/img/activity/art/a2.jpg",
       "../assets/img/activity/art/a3.jpg",
+      "../assets/img/activity/art/aa1.jpg",
+      "../assets/img/activity/art/aa2.jpg",
+      "../assets/img/activity/art/aa3.jpg",
     ],
   },
   {
@@ -72,6 +75,8 @@ const activities = [
       "../assets/img/activity/trip/t1.jpeg",
       "../assets/img/activity/trip/t2.jpeg",
       "../assets/img/activity/trip/t3.jpeg",
+      "../assets/img/activity/trip/tt1.JPG",
+      "../assets/img/activity/trip/tt2.JPG",
     ],
   },
   {
@@ -179,6 +184,19 @@ const activities = [
       "../assets/img/activity/sporttime/s5.jpeg",
       "../assets/img/activity/sporttime/s6.jpeg",
       "../assets/img/activity/sporttime/s7.jpeg",
+    ],
+  },
+  {
+    id: 16,
+    title: "Corona Awareness Activity",
+    description:
+      "Promoting awareness and safety during the COVID-19 pandemic. This activity focuses on educating students about hygiene practices, social distancing, and the importance of vaccination. The school organized various online seminars, poster-making competitions, and interactive sessions to inform and empower students about the preventive measures. These efforts contributed to raising awareness at both the community and institutional levels.",
+    photos: [
+      "../assets/img/activity/corona/c1.jpg",
+      "../assets/img/activity/corona/c2.jpg",
+      "../assets/img/activity/corona/c3.jpg",
+      "../assets/img/activity/corona/c4.jpg",
+      "../assets/img/activity/corona/c5.jpg",
     ],
   },
 ];

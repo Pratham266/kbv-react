@@ -92,6 +92,12 @@ const activities = [
     path: "/activite/sport-time",
     tagline: "Active Play and Teamwork",
   },
+  {
+    id: 16,
+    title: "Corona Activity",
+    path: "/activite/corona-time",
+    tagline: "Corona Awareness Activity",
+  },
 ];
 
 const Navbar = () => {
