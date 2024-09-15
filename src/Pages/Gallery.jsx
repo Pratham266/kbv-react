@@ -12,6 +12,10 @@ const Gallery = () => {
       toggleDivAbout.classList.remove("show");
       toggleDivActivite.classList.remove("show");
       window.scrollTo(0, 0);
+      if (window.innerWidth >= 1024) {
+        return; // If it's a laptop screen, do nothing and return
+      }
+      toggleDivAbout.style.height = "";
     } catch (err) {
       // nothing
     }

@@ -13,6 +13,10 @@ const Volunteers = () => {
       toggleDivMain.classList.remove("show");
       toggleDivAbout.classList.remove("show");
       toggleDivActivite.classList.remove("show");
+      if (window.innerWidth >= 1024) {
+        return; // If it's a laptop screen, do nothing and return
+      }
+      toggleDivAbout.style.height = "";
       window.scrollTo(0, 0);
     } catch (err) {
       // nothing
