@@ -128,10 +128,17 @@ const activities = [
     description:
       "The theater program for hearing-impaired children promotes social and emotional growth, social skills development, literacy, academic improvement, speech and communication skills, and higher motivation to learn. Children gain the skills and confidence needed to succeed in school, interact with peers, and express themselves in their daily lives.",
     photos: [
-      "../assets/img/activity/theaterart/t1.jpeg",
-      "../assets/img/activity/theaterart/t2.jpeg",
-      "../assets/img/activity/theaterart/t3.jpeg",
-      "../assets/img/activity/theaterart/t4.jpeg",
+      "../assets/img/activity/theaterart/t1.jpg",
+      "../assets/img/activity/theaterart/t3.jpg",
+      "../assets/img/activity/theaterart/t4.jpg",
+      "../assets/img/activity/theaterart/t5.jpeg",
+      "../assets/img/activity/theaterart/t6.jpeg",
+      "../assets/img/activity/theaterart/t9.jpeg",
+      "../assets/img/activity/theaterart/t11.jpg",
+      "../assets/img/activity/theaterart/t10.jpg",
+      "../assets/img/activity/theaterart/t7.jpeg",
+      "../assets/img/activity/theaterart/t8.jpeg",
+      "../assets/img/activity/theaterart/t2.jpg",
     ],
   },
   {
