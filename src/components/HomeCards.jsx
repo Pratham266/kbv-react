@@ -4,10 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 const visitors = [
   {
-    id: 1,
-    img: "./assets/img/visitors/vs1.jpeg",
-  },
-  {
     id: 2,
     img: "./assets/img/visitors/vs2.JPG",
   },
@@ -18,6 +14,10 @@ const visitors = [
   {
     id: 3,
     img: "./assets/img/visitors/vs3.jpg",
+  },
+  {
+    id: 1,
+    img: "./assets/img/visitors/vs1.jpeg",
   },
 ];
 
@@ -30,24 +30,27 @@ const HomeCards = () => {
   return (
     <div className="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
       <section className="my-5">
-        <div class="row">
+        <div className="row">
           {visitors.map((itm) => (
-            <div class="col-lg-3 col-sm-6" key={itm.id}>
-              <div class="card card-plain">
-                <div class="card-header p-0 position-relative">
-                  <a class="d-block blur-shadow-image">
+            <div className="col-lg-3 col-sm-6" key={itm.id}>
+              <div className="card card-plain">
+                <div className=" p-0 position-relative">
+                  <a
+                    className="d-block blur-shadow-image"
+                    style={{ marginTop: "8px", backgroundColor: "transparent" }}
+                  >
                     <img
                       src={itm.img}
                       alt={`visitor-img-${itm.id}`}
                       className="img-fluid shadow border-radius-lg"
                       loading="lazy"
-                      style={{ height: "227px" }}
+                      style={{ height: "227px", width: "360px" }}
                     />
                   </a>
                 </div>
-                {/* <div class="card-body px-0">
+                {/* <div className="card-body px-0">
               <h5>
-                <a href="javascript:;" class="text-dark font-weight-bold">
+                <a href="javascript:;" className="text-dark font-weight-bold">
                   Rover raised $65 million
                 </a>
               </h5>

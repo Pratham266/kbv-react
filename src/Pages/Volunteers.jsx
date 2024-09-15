@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { credentialsOfEmail } from "../EmailService/sendEmail";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 // import { ReactComponent as ButtonLoader } from "../assets/bouncing-circles.svg";
 
 const Volunteers = () => {
+  useEffect(() => {
+    try {
+      const toggleDivMain = document.querySelector(".toggle-class");
+      const toggleDivActivite = document.querySelector(".activity-toggle");
+      const toggleDivAbout = document.querySelector(".about-toggle");
+      toggleDivMain.classList.remove("show");
+      toggleDivAbout.classList.remove("show");
+      toggleDivActivite.classList.remove("show");
+      window.scrollTo(0, 0);
+    } catch (err) {
+      // nothing
+    }
+  }, []);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",

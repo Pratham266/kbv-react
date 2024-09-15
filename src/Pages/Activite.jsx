@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 const activities = [
   {
@@ -25,9 +25,9 @@ const activities = [
       "../assets/img/activity/art/a1.jpg",
       "../assets/img/activity/art/a2.jpg",
       "../assets/img/activity/art/a3.jpg",
-      "../assets/img/activity/art/aa1.jpg",
-      "../assets/img/activity/art/aa2.jpg",
-      "../assets/img/activity/art/aa3.jpg",
+      "../assets/img/activity/art/aa1.jpeg",
+      "../assets/img/activity/art/aa2.jpeg",
+      "../assets/img/activity/art/aa3.jpeg",
     ],
   },
   {
@@ -202,6 +202,20 @@ const activities = [
 ];
 
 const Activite = () => {
+  useEffect(() => {
+    try {
+      const toggleDivMain = document.querySelector(".toggle-class");
+      const toggleDivActivite = document.querySelector(".activity-toggle");
+      const toggleDivAbout = document.querySelector(".about-toggle");
+      toggleDivMain.classList.remove("show");
+      toggleDivAbout.classList.remove("show");
+      toggleDivActivite.classList.remove("show");
+      window.scrollTo(0, 0);
+    } catch (err) {
+      // nothing
+    }
+  }, []);
+
   const { itemId } = useParams(); // Access the itemId parameter
 
   let current = activities.find((item) => item.id === parseInt(itemId));
