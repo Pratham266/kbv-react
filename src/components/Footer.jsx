@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 const activities = [
   {
     id: 1,
@@ -100,6 +104,17 @@ const activities = [
 ];
 
 const Footer = () => {
+  const openEmail = () => {
+    const email = "kbvsite@gmail.com";
+    const body = "Hello, KBV";
+
+    // Construct the mailto URL
+    const mailtoURL = `mailto:${email}?&body=${encodeURIComponent(body)}`;
+
+    // Open the email client
+    window.location.href = mailtoURL;
+  };
+
   return (
     <footer className="footer pt-5 mt-5">
       <div className="container">
@@ -126,46 +141,43 @@ const Footer = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
-                    href="javascript:;"
+                    href="https://www.facebook.com/profile.php?id=61565905650204"
                     target="_blank"
                   >
-                    <i className="fab fa-facebook text-lg opacity-8"></i>
+                    <FaFacebook
+                      style={{
+                        width: "25px",
+                        height: "25px",
+                      }}
+                    />
                   </a>
                 </li>
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
                     href="javascript:;"
-                    target="_blank"
+                    onClick={openEmail}
                   >
-                    <i className="fab fa-twitter text-lg opacity-8"></i>
+                    <MdEmail
+                      style={{
+                        width: "25px",
+                        height: "25px",
+                      }}
+                    />
                   </a>
                 </li>
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"
-                    href="javascript:;"
+                    href="https://www.youtube.com/@kbvidyalayavadodara2924"
                     target="_blank"
                   >
-                    <i className="fab fa-dribbble text-lg opacity-8"></i>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link pe-1"
-                    href="javascript:;"
-                    target="_blank"
-                  >
-                    <i className="fab fa-github text-lg opacity-8"></i>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link pe-1"
-                    href="javascript:;"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube text-lg opacity-8"></i>
+                    <FaYoutube
+                      style={{
+                        width: "25px",
+                        height: "25px",
+                      }}
+                    />
                   </a>
                 </li>
               </ul>
@@ -228,6 +240,11 @@ const Footer = () => {
                 <li className="nav-item">
                   <Link className="nav-link" to={"/contact"}>
                     Contact Us
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={"/volunteers"}>
+                    Volunteers
                   </Link>
                 </li>
               </ul>

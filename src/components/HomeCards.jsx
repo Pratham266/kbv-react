@@ -12,12 +12,12 @@ const visitors = [
     img: "./assets/img/visitors/vs2.JPG",
   },
   {
-    id: 3,
-    img: "./assets/img/visitors/vs3.jpg",
+    id: 4,
+    img: "./assets/img/school/home/nation builder award.jpg",
   },
   {
-    id: 4,
-    img: "./assets/img/visitors/lunch.jpeg",
+    id: 3,
+    img: "./assets/img/visitors/vs3.jpg",
   },
 ];
 
@@ -90,7 +90,7 @@ const HomeCards = () => {
               <a>
                 <img
                   className="w-100 border-radius-lg shadow-lg"
-                  src={"./assets/img/school/home/nation builder award.jpg"}
+                  src="./assets/img/visitors/certi.jpeg"
                   alt="Product Image"
                 />
               </a>

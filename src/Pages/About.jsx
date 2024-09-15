@@ -331,7 +331,7 @@ const About = () => {
           </div>
         </section> */}
 
-        <section className="my-5 pt-5">
+        {/* <section className="my-5 pt-5">
           <div className="container">
             <div className="row">
               <div className="col-md-6 m-auto">
@@ -368,7 +368,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );
