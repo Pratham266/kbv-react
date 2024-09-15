@@ -1,0 +1,18 @@
+.about-nav-section {
+    .nav-link {
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link.active {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border: 0.5px solid #EC407A;
+        /* You can adjust the color */
+        background-color: #f8f9fa;
+        /* Light background for active */
+    }
+
+    .nav-link:not(.active):hover {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
