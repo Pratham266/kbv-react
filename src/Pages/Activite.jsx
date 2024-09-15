@@ -48,9 +48,10 @@ const activities = [
     description:
       "A healthy mind in a healthy body. Physical Education focuses on acquiring knowledge and skills for regular physical activity, which is foundational for a healthy and productive life. Activities include regular exercises, individual and group games such as Volleyball, Cricket, Badminton, Kho-Kho, and Satodiyu. Children participate in state and national level sports & yoga competitions, bringing pride to the institution.",
     photos: [
-      "../assets/img/activity/physical/p1.jpg",
-      "../assets/img/activity/physical/p2.jpg",
-      "../assets/img/activity/physical/p3.jpg",
+      "../assets/img/activity/physical/p1.jpeg",
+      "../assets/img/activity/physical/p2.jpeg",
+      "../assets/img/activity/physical/p3.jpeg",
+      "../assets/img/activity/physical/p5.jpeg",
       "../assets/img/activity/physical/p4.jpg",
     ],
   },
