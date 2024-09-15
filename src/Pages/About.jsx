@@ -136,7 +136,7 @@ const About = () => {
                   <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <a className="d-block blur-shadow-image">
                       <img
-                        src={`./assets/img/school/gallery/4.jpeg`}
+                        src={`./assets/img/visitors/vs5.JPG`}
                         alt="img-colored-shadow"
                         className="img-fluid border-radius-lg"
                       />
@@ -258,7 +258,7 @@ const About = () => {
                 <div className="position-relative">
                   <img
                     className="max-width-50 w-100 position-relative z-index-2"
-                    src="./assets/img/school/gallery/5.jpeg"
+                    src="./assets/img/visitors/vs4.jpg"
                     alt="image-dhabakara-2"
                   />
                 </div>

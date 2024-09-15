@@ -108,7 +108,13 @@ const activities = [
     title: "Work Shops",
     description:
       "Workshops are organized for parents, families, friends, and the wider community to improve communication with Deaf children. Sign language classes are offered to empower parents and create a healthier home atmosphere. Marriage and family counseling sessions are also available to promote the positive growth of the entire family.",
-    photos: [],
+    photos: [
+      "../assets/img/activity/workshop/w1.JPG",
+      "../assets/img/activity/workshop/w2.JPG",
+      "../assets/img/activity/workshop/w3.jpg",
+      "../assets/img/activity/workshop/w4.jpg",
+      "../assets/img/activity/workshop/w5.jpg",
+    ],
   },
   {
     id: 10,
