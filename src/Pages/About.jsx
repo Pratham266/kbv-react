@@ -99,7 +99,13 @@ const About = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-12">
                     <div className="info">
-                      <i className="material-icons text-3xl text-gradient text-info mb-3">
+                      <i
+                        className="material-icons text-3xl text-gradient text-info mb-3"
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(195deg, #D81B60, #D81B60)",
+                        }}
+                      >
                         public
                       </i>
                       <h5>Vision</h5>
@@ -115,7 +121,13 @@ const About = () => {
                 <div className="row justify-content-center mt-4">
                   <div className="col-md-12">
                     <div className="info">
-                      <i className="material-icons text-3xl text-gradient text-info mb-3">
+                      <i
+                        className="material-icons text-3xl text-gradient text-info mb-3"
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(195deg, #D81B60, #D81B60)",
+                        }}
+                      >
                         payments
                       </i>
                       <h5>Mission</h5>
