@@ -304,6 +304,66 @@ const images = [
     title: "Image 62 - KBV",
     url: "./assets/img/school/gallery/62.jpeg",
   },
+  {
+    id: 63,
+    title: "Image 63 - KBV",
+    url: "./assets/img/school/gallery/63.jpg",
+  },
+  {
+    id: 64,
+    title: "Image 64 - KBV",
+    url: "./assets/img/school/gallery/64.jpg",
+  },
+  {
+    id: 65,
+    title: "Image 65 - KBV",
+    url: "./assets/img/school/gallery/65.jpg",
+  },
+  {
+    id: 66,
+    title: "Image 66 - KBV",
+    url: "./assets/img/school/gallery/66.jpg",
+  },
+  {
+    id: 67,
+    title: "Image 67 - KBV",
+    url: "./assets/img/school/gallery/67.jpeg",
+  },
+  {
+    id: 68,
+    title: "Image 68 - KBV",
+    url: "./assets/img/school/gallery/68.jpg",
+  },
+  {
+    id: 69,
+    title: "Image 69 - KBV",
+    url: "./assets/img/school/gallery/69.jpeg",
+  },
+  {
+    id: 70,
+    title: "Image 70 - KBV",
+    url: "./assets/img/school/gallery/70.jpg",
+  },
+  {
+    id: 71,
+    title: "Image 71 - KBV",
+    url: "./assets/img/school/gallery/71.jpeg",
+  },
+  {
+    id: 72,
+    title: "Image 72 - KBV",
+    url: "./assets/img/school/gallery/72.jpeg",
+  },
+  {
+    id: 73,
+    title: "Image 73 - KBV",
+    url: "./assets/img/school/gallery/73.jpeg",
+  },
+  {
+    id: 74,
+    title: "Image 74 - KBV",
+    url: "./assets/img/school/gallery/74.jpeg",
+  },
 ];
 
 const GallaryPhotos = () => {

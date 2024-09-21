@@ -5,19 +5,19 @@ import { useNavigate } from "react-router-dom";
 const visitors = [
   {
     id: 2,
-    img: "./assets/img/visitors/vs2.JPG",
+    img: "./assets/img/home/home_6.jpg",
   },
   {
     id: 4,
-    img: "./assets/img/school/home/nation builder award.jpg",
-  },
-  {
-    id: 3,
-    img: "./assets/img/visitors/vs3.jpg",
+    img: "./assets/img/home/home_5.jpg",
   },
   {
     id: 1,
-    img: "./assets/img/visitors/vs1.jpeg",
+    img: "./assets/img/home/home_1.jpg",
+  },
+  {
+    id: 3,
+    img: "./assets/img/home/home_4.jpg",
   },
 ];
 
@@ -37,14 +37,23 @@ const HomeCards = () => {
                 <div className=" p-0 position-relative">
                   <a
                     className="d-block blur-shadow-image"
-                    style={{ marginTop: "8px", backgroundColor: "transparent" }}
+                    style={{
+                      marginTop: "8px",
+                      backgroundColor: "transparent",
+                      border: "2px solid #e91e63",
+                      borderRadius: "10px",
+                    }}
                   >
                     <img
                       src={itm.img}
                       alt={`visitor-img-${itm.id}`}
                       className="img-fluid shadow border-radius-lg"
                       loading="lazy"
-                      style={{ height: "227px", width: "360px" }}
+                      style={{
+                        height: "240px",
+                        width: "373px",
+                        borderRadius: "10px",
+                      }}
                     />
                   </a>
                 </div>
@@ -269,7 +278,7 @@ const HomeCards = () => {
                 <div className="col-md-6">
                   <div className="card move-on-hover">
                     <img
-                      src={"./assets/img/school/home/IMG-20190205-WA0124.jpg"}
+                      src={"./assets/img/home/home_2.jpg"}
                       alt="aboutus"
                       style={{ height: "300px", width: "416px" }}
                     />
@@ -300,9 +309,7 @@ const HomeCards = () => {
                 <div className="col-md-6 mt-md-3 mt-6">
                   <div className="card move-on-hover">
                     <img
-                      src={
-                        "./assets/img/school/home/got 1 st prize in working model in ureka science fair- 2019.jpg"
-                      }
+                      src={"./assets/img/home/home_3.jpg"}
                       alt="author"
                       style={{ height: "300px", width: "416px" }}
                     />
@@ -407,7 +414,6 @@ const HomeCards = () => {
         </div>
       </div>
       {/* <!-- -------- END Content Presentation Docs ------- --> */}
-
       <section className="py-sm-7">
         <div className="container">
           <div className="row">
@@ -416,7 +422,7 @@ const HomeCards = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/qpJ0g_Sjego?si=rNdaz6dv3Sp2Lws4"
+                  src="https://www.youtube.com/embed/o4rISJwMCMk?si=u6DBK0GdGdNN_eAg"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -431,7 +437,7 @@ const HomeCards = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/WYaKm4ephDo?si=3DZcCXV7ojVu9xae"
+                  src="https://www.youtube.com/embed/HZZIlYoRQIw?si=el-oGmMFEn6on301"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
