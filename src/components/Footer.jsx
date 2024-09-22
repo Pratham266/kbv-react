@@ -103,6 +103,34 @@ const activities = [
   },
 ];
 
+const latters = [
+  {
+    id: 1,
+    path: "./assets/letters/Kbv The Littele Hands News Letter-1.pdf",
+    title: "News Letter 1",
+  },
+  {
+    id: 2,
+    path: "./assets/letters/Kbv The Littele Hands News Letter-2.pdf",
+    title: "News Letter 2",
+  },
+  {
+    id: 3,
+    path: "./assets/letters/Kbv The Littele Hands News Letter-3.pdf",
+    title: "News Letter 3",
+  },
+  {
+    id: 4,
+    path: "./assets/letters/Kbv The Littele Hands News Letter-4.pdf",
+    title: "News Letter 4",
+  },
+  {
+    id: 5,
+    path: "./assets/letters/Kbv The Littele Hands News Letter-5.pdf",
+    title: "News Letter 5",
+  },
+];
+
 const Footer = () => {
   const openEmail = () => {
     const email = "kbvsite@gmail.com";
@@ -202,6 +230,18 @@ const Footer = () => {
                     Gallery
                   </Link>
                 </li>
+              </ul>
+            </div>
+            <div>
+              <h6 className="text-sm">News Letters</h6>
+              <ul className="flex-column ms-n3 nav">
+                {latters.map((item) => (
+                  <li className="nav-item" key={item.id}>
+                    <a className="nav-link" href={item.path} target="_blank">
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

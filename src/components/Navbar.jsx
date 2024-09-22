@@ -227,6 +227,21 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item dropdown dropdown-hover mx-2">
+                    <Link
+                      className="nav-link ps-2 d-flex cursor-pointer align-items-center"
+                      id="dropdownMenuPages"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      to="/intrect-club"
+                    >
+                      <i className="material-icons opacity-6 me-2 text-md">
+                        view_day
+                      </i>
+                      Interact Club
+                    </Link>
+                  </li>
+
+                  <li className="nav-item dropdown dropdown-hover mx-2">
                     <a
                       className="nav-link ps-2 d-flex cursor-pointer align-items-center"
                       id="dropdownMenuPages"

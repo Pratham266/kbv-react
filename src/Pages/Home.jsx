@@ -22,7 +22,16 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Header />
+      <Header
+        title={"Smt. Kamlaben"}
+        smalTitlte={"Badhir Vidhyalaya"}
+        pera={` A child, who has not known the sound of " Mother" and her love,
+        a child who has not listened the sweet stories of grandmother,
+        who has not listened the melodies voice of birds. These hearing
+        impaired students required love and affection, protective
+        environment and care. They do not want pity but need support and
+        help.`}
+      />
       <HomeCards />
     </>
   );

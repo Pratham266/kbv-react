@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ title, smalTitlte, pera }) => {
   return (
     <header className="header-2">
       <div
@@ -15,17 +15,10 @@ const Header = () => {
           <div className="row">
             <div className="col-lg-7 text-center mx-auto">
               <h1 className="text-white pt-3 mt-n5">
-                Smt. Kamlaben <br />
-                Badhir Vidhyalaya
+                {title} <br />
+                {smalTitlte}
               </h1>
-              <p className="lead text-white mt-3">
-                A child, who has not known the sound of " Mother" and her love,
-                a child who has not listened the sweet stories of grandmother,
-                who has not listened the melodies voice of birds. These hearing
-                impaired students required love and affection, protective
-                environment and care. They do not want pity but need support and
-                help.
-              </p>
+              {pera && <p className="lead text-white mt-3">{pera}</p>}
             </div>
           </div>
         </div>
