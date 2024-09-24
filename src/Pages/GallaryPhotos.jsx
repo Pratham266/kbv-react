@@ -165,19 +165,9 @@ const images = [
     url: "./assets/img/school/gallery/30.jpg",
   },
   {
-    id: 32,
-    title: "Image 32 - KBV",
-    url: "./assets/img/school/gallery/30.jpg",
-  },
-  {
     id: 33,
     title: "Image 33 - KBV",
     url: "./assets/img/school/gallery/33.jpg",
-  },
-  {
-    id: 34,
-    title: "Image 34 - KBV",
-    url: "./assets/img/school/gallery/34.jpg",
   },
   {
     id: 35,

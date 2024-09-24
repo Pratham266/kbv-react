@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
 import HomeCards from "../components/HomeCards";
+import "./Home.scss";
 
 const Home = () => {
   useEffect(() => {
@@ -24,7 +25,7 @@ const Home = () => {
     <>
       <Header
         title={"Smt. Kamlaben"}
-        smalTitlte={"Badhir Vidhyalaya"}
+        smalTitlte={"Badhir Vidhyalaya Vadodara"}
         pera={` A child, who has not known the sound of " Mother" and her love,
         a child who has not listened the sweet stories of grandmother,
         who has not listened the melodies voice of birds. These hearing

@@ -11,7 +11,7 @@ const Header = ({ title, smalTitlte, pera }) => {
         }}
       >
         <span className="mask bg-gradient-primary opacity-4"></span>
-        <div className="container">
+        <div className="container" style={{ marginTop: "100px" }}>
           <div className="row">
             <div className="col-lg-7 text-center mx-auto">
               <h1 className="text-white pt-3 mt-n5">

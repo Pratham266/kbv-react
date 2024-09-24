@@ -42,6 +42,7 @@ const HomeCards = () => {
                       backgroundColor: "transparent",
                       border: "2px solid #e91e63",
                       borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                     }}
                   >
                     <img
@@ -53,6 +54,7 @@ const HomeCards = () => {
                         height: "240px",
                         width: "373px",
                         borderRadius: "10px",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                       }}
                     />
                   </a>
@@ -82,7 +84,7 @@ const HomeCards = () => {
               <h3 className="text-gradient text-primary mb-0">Our Vision</h3>
               <h3>We at "KBV"</h3>
               <p className="pe-md-5 mb-4">
-                school for the Hearing Impaired believe in the word in which all
+                School for the Hearing Impaired believe in the word in which all
                 people who are Hearing Impaired and deaf have every opportunity
                 to experience full and productive lives.
               </p>
@@ -119,7 +121,7 @@ const HomeCards = () => {
               <h3 className="text-gradient text-primary mb-0">Our Mission</h3>
               <h3>Our school provides</h3>
               <p className="pe-md-5 mb-4">
-                hearing impaired students access to comprehensive, evidence
+                Hearing impaired students access to comprehensive, evidence
                 based education and support services in the class room and in
                 the greater community. we strive for excellence and innovation.
                 we work to maximize each students social, physical,
@@ -276,42 +278,102 @@ const HomeCards = () => {
             <div className="col-md-8">
               <div className="row mt-4">
                 <div className="col-md-6">
-                  <div className="card move-on-hover">
+                  <div
+                    className="card move-on-hover"
+                    style={{
+                      height: "200px",
+                      width: "100%",
+                      overflow: "hidden",
+                      border: "2px solid #e91e63",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    }}
+                  >
                     <img
                       src={"./assets/img/home/home_2.jpg"}
                       alt="aboutus"
-                      style={{ height: "300px", width: "416px" }}
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "contain",
+                      }}
+                      // style={{ height: "300px", width: "416px" }}
                     />
                   </div>
                 </div>
+
                 <div className="col-md-6 mt-md-0 mt-5">
-                  <div className="card move-on-hover">
+                  <div
+                    className="card move-on-hover"
+                    style={{
+                      height: "200px",
+                      width: "100%",
+                      overflow: "hidden",
+                      border: "2px solid #e91e63",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    }}
+                  >
                     <img
                       src={
                         "./assets/img/school/home/got 1 sr prize in district level program of 26 th januadry celebration by governmaent of gujarat.jpeg"
                       }
                       alt="contacus"
-                      style={{ height: "300px", width: "416px" }}
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "contain",
+                      }}
+                      // style={{ height: "300px", width: "416px" }}
                     />
                   </div>
                 </div>
                 <div className="col-md-6 mt-md-3 mt-6">
-                  <div className="card move-on-hover">
+                  <div
+                    className="card move-on-hover"
+                    style={{
+                      height: "200px",
+                      width: "100%",
+                      overflow: "hidden",
+                      border: "2px solid #e91e63",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    }}
+                  >
+                    <img
+                      src={"./assets/img/home/home_3.jpg"}
+                      alt="author"
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 mt-md-3 mt-6">
+                  <div
+                    className="card move-on-hover"
+                    style={{
+                      height: "200px",
+                      width: "100%",
+                      overflow: "hidden",
+                      border: "2px solid #e91e63",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    }}
+                  >
                     <img
                       src={
                         "./assets/img/school/home/WhatsApp Image 2020-01-10 at 8.39.56 AM.jpeg"
                       }
                       alt="signin"
-                      style={{ height: "300px", width: "416px" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 mt-md-3 mt-6">
-                  <div className="card move-on-hover">
-                    <img
-                      src={"./assets/img/home/home_3.jpg"}
-                      alt="author"
-                      style={{ height: "300px", width: "416px" }}
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "contain",
+                      }}
+                      // style={{ height: "300px", width: "416px" }}
                     />
                   </div>
                 </div>
