@@ -64,36 +64,19 @@ const images = [
     title: "Image 3 - KBV",
     url: "./assets/img/school/gallery/3.jpeg",
   },
-  {
-    id: 12,
-    title: "Image 4 - KBV",
-    url: "./assets/img/school/gallery/4.jpeg",
-  },
+
   {
     id: 13,
     title: "Image 5 - KBV",
     url: "./assets/img/school/gallery/5.jpeg",
   },
-  {
-    id: 14,
-    title: "Image 6 - KBV",
-    url: "./assets/img/school/gallery/6.jpeg",
-  },
+
   {
     id: 15,
     title: "Image 7 - KBV",
     url: "./assets/img/school/gallery/7.jpeg",
   },
-  {
-    id: 16,
-    title: "Image 8 - KBV",
-    url: "./assets/img/school/gallery/8.jpeg",
-  },
-  {
-    id: 17,
-    title: "Image 9 - KBV",
-    url: "./assets/img/school/gallery/9.jpeg",
-  },
+
   {
     id: 18,
     title: "Image 10 - KBV",

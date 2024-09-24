@@ -164,9 +164,10 @@ const Footer = () => {
                 KBV
               </h6>
             </div>
-            <div>
+            {/* remove margin when more scoailmedi account */}
+            <div style={{ marginLeft: "13px" }}>
               <ul className="d-flex flex-row ms-n3 nav">
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a
                     className="nav-link pe-1"
                     href="https://www.facebook.com/profile.php?id=61565905650204"
@@ -179,7 +180,7 @@ const Footer = () => {
                       }}
                     />
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a
                     className="nav-link pe-1"

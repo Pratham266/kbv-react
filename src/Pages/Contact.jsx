@@ -129,7 +129,7 @@ const Contact = () => {
 
   return (
     <section>
-      <div className="page-header min-vh-100">
+      <div className="page-header min-vh-100" style={{ marginTop: "80px" }}>
         <div className="container">
           <div className="row">
             <div className="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">

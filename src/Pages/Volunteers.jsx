@@ -168,11 +168,15 @@ const Volunteers = () => {
                 style={{
                   backgroundImage: `url('../assets/img/at-volutree.jpg')`,
                   backgroundSize: "cover",
+                  height: "300px",
                 }}
                 loading="lazy"
               ></div>
             </div>
-            <div className="col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
+            <div
+              className="col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5"
+              style={{ marginTop: "80px" }}
+            >
               <div className="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
                 <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                   <div className="bg-gradient-primary shadow-primary border-radius-lg p-3">
