@@ -2,21 +2,46 @@ import React from "react";
 import "./css/homecard.scss";
 import { useNavigate } from "react-router-dom";
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+    partialVisibilityGutter: 40,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    partialVisibilityGutter: 30,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
 const visitors = [
   {
-    id: 2,
+    id: 1,
     img: "./assets/img/home/home_6.jpg",
   },
   {
-    id: 4,
+    id: 2,
     img: "./assets/img/home/home_5.jpg",
   },
   {
-    id: 1,
+    id: 3,
     img: "./assets/img/home/home_1.jpg",
   },
   {
-    id: 3,
+    id: 4,
     img: "./assets/img/home/home_4.jpg",
   },
 ];
@@ -31,35 +56,61 @@ const HomeCards = () => {
     <div className="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
       <section className="my-5">
         <div className="row">
-          {visitors.map((itm) => (
-            <div className="col-lg-3 col-sm-6" key={itm.id}>
-              <div className="card card-plain">
-                <div className=" p-0 position-relative">
-                  <a
-                    className="d-block blur-shadow-image"
-                    style={{
-                      marginTop: "8px",
-                      backgroundColor: "transparent",
-                      border: "2px solid #e91e63",
-                      borderRadius: "10px",
-                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-                    }}
-                  >
-                    <img
-                      src={itm.img}
-                      alt={`visitor-img-${itm.id}`}
-                      className="img-fluid shadow border-radius-lg"
-                      loading="lazy"
+          <Carousel
+            responsive={responsive}
+            // additionalTransfrom={0}
+            arrows={false}
+            autoPlay
+            autoPlaySpeed={2500}
+            centerMode={false}
+            className=""
+            containerClass="container-with-dots"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            rewind={false}
+          >
+            {visitors.map((itm) => (
+              <div className="" key={itm.id}>
+                <div
+                  className="card card-plain"
+                  style={{ marginBottom: "10px" }}
+                >
+                  <div className=" p-0 position-relative">
+                    <a
+                      className="d-block blur-shadow-image"
                       style={{
-                        height: "240px",
-                        width: "373px",
+                        marginTop: "8px",
+                        backgroundColor: "transparent",
                         borderRadius: "10px",
                         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        height: "215px",
+                        width: "348px",
                       }}
-                    />
-                  </a>
-                </div>
-                {/* <div className="card-body px-0">
+                    >
+                      <img
+                        src={itm.img}
+                        alt={`visitor-img-${itm.id}`}
+                        className="img-fluid shadow border-radius-lg"
+                        loading="lazy"
+                        style={{
+                          height: "210px",
+                          width: "343px",
+                          borderRadius: "10px",
+                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        }}
+                      />
+                    </a>
+                  </div>
+                  {/* <div className="card-body px-0">
               <h5>
                 <a href="javascript:;" className="text-dark font-weight-bold">
                   Rover raised $65 million
@@ -70,9 +121,10 @@ const HomeCards = () => {
                 renting an Airbnb. That’s the idea behind Rover ...
               </p>
             </div> */}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </Carousel>
         </div>
       </section>
       {/* Our Vision */}
