@@ -17,6 +17,7 @@ const activities = [
       "../assets/img/activity/drawing/d1.jpg",
       "../assets/img/activity/drawing/d2.jpg",
       "../assets/img/activity/drawing/d3.jpg",
+      "../assets/img/activity/drawing/drawing.jpeg",
     ],
   },
   {
@@ -39,10 +40,12 @@ const activities = [
     description:
       "When I hear I know, when I see I remember, when I do I understand. The science program includes various activities such as clay work, painting, card making, flower vases, glass painting, ceramics work, chalk making, candle making, stitching, embroidery, canvas, and Rangoli.",
     photos: [
+      "../assets/img/activity/workshop/w3.jpg",
+      "../assets/img/activity/workshop/w4.jpg",
       "../assets/img/activity/science/s1.jpg",
-      "../assets/img/activity/science/s2.jpg",
       "../assets/img/activity/science/s3.jpg",
       "../assets/img/activity/science/s4.jpg",
+      "../assets/img/activity/science/s2.jpg",
     ],
   },
   {
@@ -68,6 +71,7 @@ const activities = [
       "../assets/img/activity/cultural/c2.jpg",
       "../assets/img/activity/cultural/c3.jpeg",
       "../assets/img/activity/cultural/c4.jpeg",
+      "../assets/img/activity/cultural/culnew.jpeg",
     ],
   },
   {
@@ -115,9 +119,8 @@ const activities = [
     photos: [
       "../assets/img/activity/workshop/w1.JPG",
       "../assets/img/activity/workshop/w2.JPG",
-      "../assets/img/activity/workshop/w3.jpg",
-      "../assets/img/activity/workshop/w4.jpg",
       "../assets/img/activity/workshop/w5.jpg",
+      "../assets/img/activity/workshop/workshop.jpg",
     ],
   },
   {
@@ -316,6 +319,7 @@ const Activite = () => {
                                 alt={item}
                                 className="img-fluid shadow border-radius-lg"
                                 loading="lazy"
+                                style={{ cursor: "pointer" }}
                               />
                             </PhotoView>
                           </PhotoProvider>
