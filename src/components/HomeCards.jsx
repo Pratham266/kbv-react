@@ -47,6 +47,7 @@ const milestones = [
     src: "./assets/img/school/home/WhatsApp Image 2020-01-10 at 8.39.56 AM.jpeg",
   },
 ];
+
 const visitors = [
   {
     id: 1,
@@ -63,6 +64,22 @@ const visitors = [
   {
     id: 4,
     img: "./assets/img/home/home_4.jpg",
+  },
+  {
+    id: 5,
+    img: "./assets/img/home/s1.JPG",
+  },
+  {
+    id: 6,
+    img: "./assets/img/home/s2.JPG",
+  },
+  {
+    id: 7,
+    img: "./assets/img/home/s3.JPG",
+  },
+  {
+    id: 8,
+    img: "./assets/img/home/s4.JPG",
   },
 ];
 
