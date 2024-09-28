@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
+
 const activities = [
   {
     id: 1,
@@ -302,16 +305,20 @@ const Activite = () => {
               {current &&
                 current?.photos &&
                 current?.photos.map((item) => (
-                  <div className="col-lg-3 col-sm-6 mt-4">
+                  <div className="col-lg-3 col-sm-6 mt-4" key={item}>
                     <div className="card card-plain">
                       <div className="card-header p-0 position-relative">
                         <a className="d-block blur-shadow-image">
-                          <img
-                            src={item}
-                            alt={item}
-                            className="img-fluid shadow border-radius-lg"
-                            loading="lazy"
-                          />
+                          <PhotoProvider>
+                            <PhotoView src={item}>
+                              <img
+                                src={item}
+                                alt={item}
+                                className="img-fluid shadow border-radius-lg"
+                                loading="lazy"
+                              />
+                            </PhotoView>
+                          </PhotoProvider>
                         </a>
                       </div>
                       {/* <div className="card-body px-0">

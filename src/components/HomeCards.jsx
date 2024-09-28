@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 const responsive = {
   superLargeDesktop: {
@@ -27,6 +29,24 @@ const responsive = {
   },
 };
 
+const milestones = [
+  {
+    id: 1,
+    src: "./assets/img/home/home_2.jpg",
+  },
+  {
+    id: 2,
+    src: "./assets/img/school/home/got 1 sr prize in district level program of 26 th januadry celebration by governmaent of gujarat.jpeg",
+  },
+  {
+    id: 3,
+    src: "./assets/img/home/home_3.jpg",
+  },
+  {
+    id: 4,
+    src: "./assets/img/school/home/WhatsApp Image 2020-01-10 at 8.39.56 AM.jpeg",
+  },
+];
 const visitors = [
   {
     id: 1,
@@ -94,20 +114,25 @@ const HomeCards = () => {
                         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                         height: "215px",
                         width: "348px",
+                        cursor: "pointer",
                       }}
                     >
-                      <img
-                        src={itm.img}
-                        alt={`visitor-img-${itm.id}`}
-                        className="img-fluid shadow border-radius-lg"
-                        loading="lazy"
-                        style={{
-                          height: "210px",
-                          width: "343px",
-                          borderRadius: "10px",
-                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-                        }}
-                      />
+                      <PhotoProvider>
+                        <PhotoView src={itm.img}>
+                          <img
+                            src={itm.img}
+                            alt={`visitor-img-${itm.id}`}
+                            className="img-fluid shadow border-radius-lg"
+                            loading="lazy"
+                            style={{
+                              height: "210px",
+                              width: "343px",
+                              borderRadius: "10px",
+                              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                            }}
+                          />
+                        </PhotoView>
+                      </PhotoProvider>
                     </a>
                   </div>
                   {/* <div className="card-body px-0">
@@ -341,16 +366,21 @@ const HomeCards = () => {
                       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                     }}
                   >
-                    <img
-                      src={"./assets/img/home/home_2.jpg"}
-                      alt="aboutus"
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        objectFit: "contain",
-                      }}
-                      // style={{ height: "300px", width: "416px" }}
-                    />
+                    <PhotoProvider>
+                      <PhotoView src={"./assets/img/home/home_2.jpg"}>
+                        <img
+                          src={"./assets/img/home/home_2.jpg"}
+                          alt="aboutus"
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "contain",
+                            cursor: "pointer",
+                          }}
+                          // style={{ height: "300px", width: "416px" }}
+                        />
+                      </PhotoView>
+                    </PhotoProvider>
                   </div>
                 </div>
 
@@ -366,18 +396,27 @@ const HomeCards = () => {
                       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                     }}
                   >
-                    <img
-                      src={
-                        "./assets/img/school/home/got 1 sr prize in district level program of 26 th januadry celebration by governmaent of gujarat.jpeg"
-                      }
-                      alt="contacus"
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        objectFit: "contain",
-                      }}
-                      // style={{ height: "300px", width: "416px" }}
-                    />
+                    <PhotoProvider>
+                      <PhotoView
+                        src={
+                          "./assets/img/school/home/got 1 sr prize in district level program of 26 th januadry celebration by governmaent of gujarat.jpeg"
+                        }
+                      >
+                        <img
+                          src={
+                            "./assets/img/school/home/got 1 sr prize in district level program of 26 th januadry celebration by governmaent of gujarat.jpeg"
+                          }
+                          alt="contacus"
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "contain",
+                            cursor: "pointer",
+                          }}
+                          // style={{ height: "300px", width: "416px" }}
+                        />
+                      </PhotoView>
+                    </PhotoProvider>
                   </div>
                 </div>
                 <div className="col-md-6 mt-md-3 mt-6">
@@ -392,15 +431,20 @@ const HomeCards = () => {
                       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                     }}
                   >
-                    <img
-                      src={"./assets/img/home/home_3.jpg"}
-                      alt="author"
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        objectFit: "contain",
-                      }}
-                    />
+                    <PhotoProvider>
+                      <PhotoView src={"./assets/img/home/home_3.jpg"}>
+                        <img
+                          src={"./assets/img/home/home_3.jpg"}
+                          alt="author"
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "contain",
+                            cursor: "pointer",
+                          }}
+                        />
+                      </PhotoView>
+                    </PhotoProvider>
                   </div>
                 </div>
                 <div className="col-md-6 mt-md-3 mt-6">
@@ -415,18 +459,27 @@ const HomeCards = () => {
                       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                     }}
                   >
-                    <img
-                      src={
-                        "./assets/img/school/home/WhatsApp Image 2020-01-10 at 8.39.56 AM.jpeg"
-                      }
-                      alt="signin"
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        objectFit: "contain",
-                      }}
-                      // style={{ height: "300px", width: "416px" }}
-                    />
+                    <PhotoProvider>
+                      <PhotoView
+                        src={
+                          "./assets/img/school/home/WhatsApp Image 2020-01-10 at 8.39.56 AM.jpeg"
+                        }
+                      >
+                        <img
+                          src={
+                            "./assets/img/school/home/WhatsApp Image 2020-01-10 at 8.39.56 AM.jpeg"
+                          }
+                          alt="signin"
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "contain",
+                            cursor: "pointer",
+                          }}
+                          // style={{ height: "300px", width: "416px" }}
+                        />
+                      </PhotoView>
+                    </PhotoProvider>
                   </div>
                 </div>
               </div>

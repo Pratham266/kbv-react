@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "../components/about/Header";
 import "./About.scss";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 const values = {
   id: "value",
@@ -147,11 +149,15 @@ const About = () => {
                 <div className="card">
                   <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <a className="d-block blur-shadow-image">
-                      <img
-                        src={`./assets/img/visitors/vs5.JPG`}
-                        alt="img-colored-shadow"
-                        className="img-fluid border-radius-lg"
-                      />
+                      <PhotoProvider>
+                        <PhotoView src={`./assets/img/visitors/vs5.JPG`}>
+                          <img
+                            src={`./assets/img/visitors/vs5.JPG`}
+                            alt="img-colored-shadow"
+                            className="img-fluid border-radius-lg"
+                          />
+                        </PhotoView>
+                      </PhotoProvider>
                     </a>
                   </div>
                 </div>
@@ -268,11 +274,15 @@ const About = () => {
 
               <div className="col-md-5 ms-auto">
                 <div className="position-relative">
-                  <img
-                    className="max-width-50 w-100 position-relative z-index-2"
-                    src="./assets/img/visitors/vs4.jpg"
-                    alt="image-dhabakara-2"
-                  />
+                  <PhotoProvider>
+                    <PhotoView src="./assets/img/visitors/vs4.jpg">
+                      <img
+                        className="max-width-50 w-100 position-relative z-index-2"
+                        src="./assets/img/visitors/vs4.jpg"
+                        alt="image-dhabakara-2"
+                      />
+                    </PhotoView>
+                  </PhotoProvider>
                 </div>
               </div>
             </div>
