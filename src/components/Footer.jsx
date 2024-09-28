@@ -129,6 +129,11 @@ const latters = [
     path: "./assets/letters/Kbv The Littele Hands News Letter-5.pdf",
     title: "News Letter 5",
   },
+  {
+    id: 6,
+    path: "./assets/letters/KBV  News Letter - 6.pdf",
+    title: "News Letter 6",
+  },
 ];
 
 const Footer = () => {
