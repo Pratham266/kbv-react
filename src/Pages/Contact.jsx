@@ -133,14 +133,27 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
-              <div
+              {/* <div
                 className="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center"
                 style={{
                   backgroundImage: `url('../assets/img/at-volutree.jpg')`,
                   backgroundSize: "cover",
                 }}
                 loading="lazy"
-              ></div>
+              ></div> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9045327418503!2d73.2023279!3d22.31945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf58e71ff969%3A0x2a9feb0e23edbccd!2sSmt.%20Kamlaben%20badhir%20vidhyLaya%20Vadodara!5e0!3m2!1sen!2sin!4v1727591913984!5m2!1sen!2sin"
+                width="700"
+                height="700"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                style={{
+                  border: 0,
+                  borderRadius: "10px",
+                }}
+              ></iframe>
             </div>
 
             <div className="col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">

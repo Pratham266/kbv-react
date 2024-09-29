@@ -54,14 +54,6 @@ const visitors = [
     img: "./assets/img/home/home_6.jpg",
   },
   {
-    id: 2,
-    img: "./assets/img/home/home_5.jpg",
-  },
-  {
-    id: 3,
-    img: "./assets/img/home/home_1.jpg",
-  },
-  {
     id: 4,
     img: "./assets/img/home/home_4.jpg",
   },
@@ -70,16 +62,40 @@ const visitors = [
     img: "./assets/img/home/s1.JPG",
   },
   {
+    id: 8,
+    img: "./assets/img/home/ss2.jpeg",
+  },
+  {
+    id: 9,
+    img: "./assets/img/home/ss3.jpeg",
+  },
+  {
+    id: 10,
+    img: "./assets/img/home/ss4.jpeg",
+  },
+  {
+    id: 2,
+    img: "./assets/img/home/home_5.jpg",
+  },
+  {
+    id: 3,
+    img: "./assets/img/home/home_1.jpg",
+  },
+  {
     id: 6,
     img: "./assets/img/home/s2.JPG",
   },
   {
     id: 7,
-    img: "./assets/img/home/s3.JPG",
+    img: "./assets/img/home/ss1.jpeg",
   },
   {
-    id: 8,
-    img: "./assets/img/home/s4.JPG",
+    id: 11,
+    img: "./assets/img/home/ss5.jpeg",
+  },
+  {
+    id: 12,
+    img: "./assets/img/home/ss6.jpeg",
   },
 ];
 
