@@ -109,10 +109,6 @@ const activities = [
       "../assets/img/activity/festival/f2.jpg",
       "../assets/img/activity/festival/f3.jpg",
       "../assets/img/activity/festival/f4.jpg",
-      "../assets/img/activity/festival/d1.jpeg",
-      "../assets/img/activity/festival/d2.jpeg",
-      "../assets/img/activity/festival/d3.jpeg",
-      "../assets/img/activity/festival/d4.jpeg",
     ],
   },
   {
@@ -222,6 +218,18 @@ const activities = [
       "../assets/img/activity/corona/c3.jpg",
       "../assets/img/activity/corona/c4.jpg",
       "../assets/img/activity/corona/c5.jpg",
+    ],
+  },
+  {
+    id: 17,
+    title: "Day Celebration",
+    description:
+      "Day Celebration is a festive event where students come together to celebrate special occasions and cultural traditions. This event encourages a sense of community, allowing students to showcase their talents and participate in a variety of fun and engaging activities. Designed to be inclusive and enjoyable for all, the celebration fosters a spirit of togetherness and joy, creating memorable experiences for everyone involved.",
+    photos: [
+      "../assets/img/activity/festival/d1.jpeg",
+      "../assets/img/activity/festival/d2.jpeg",
+      "../assets/img/activity/festival/d3.jpeg",
+      "../assets/img/activity/festival/d4.jpeg",
     ],
   },
 ];

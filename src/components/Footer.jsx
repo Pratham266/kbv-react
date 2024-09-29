@@ -101,6 +101,12 @@ const activities = [
     path: "/activite/corona-time",
     tagline: "Corona Awareness Activity",
   },
+  {
+    id: 17,
+    title: "Day Celebration",
+    path: "/activite/day-celebration",
+    tagline: "Celebrate Together, Create Memories",
+  },
 ];
 
 const latters = [
