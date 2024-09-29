@@ -78,16 +78,8 @@ const visitors = [
     img: "./assets/img/home/home_5.jpg",
   },
   {
-    id: 3,
-    img: "./assets/img/home/home_1.jpg",
-  },
-  {
     id: 6,
     img: "./assets/img/home/s2.JPG",
-  },
-  {
-    id: 7,
-    img: "./assets/img/home/ss1.jpeg",
   },
   {
     id: 11,

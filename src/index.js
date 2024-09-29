@@ -13,6 +13,7 @@ import Contact from "./Pages/Contact.jsx";
 import Volunteers from "./Pages/Volunteers.jsx";
 import PdfOpenPage from "./Pages/PdfOpenPage.jsx";
 import NewsCorner from "./Pages/NewsCorner.jsx";
+import Infrastructure from "./Pages/Infrastructure.jsx";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "news-corner",
         element: <NewsCorner />,
+      },
+      {
+        path: "/infrastructure",
+        element: <Infrastructure />,
       },
       {
         path: "*", // Catch-all route for 404 errors

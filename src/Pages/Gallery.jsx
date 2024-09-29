@@ -290,6 +290,16 @@ const images = [
     title: "Image 74 - KBV",
     url: "./assets/img/school/gallery/74.jpeg",
   },
+  {
+    id: 75,
+    title: "Image 75 - KBV",
+    img: "./assets/img/home/home_1.jpg",
+  },
+  {
+    id: 76,
+    title: "Image 76 - KBV",
+    img: "./assets/img/home/ss1.jpeg",
+  },
 ];
 
 const Gallery = () => {

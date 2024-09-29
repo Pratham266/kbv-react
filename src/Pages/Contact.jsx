@@ -153,7 +153,7 @@ const Contact = () => {
                   border: 0,
                   borderRadius: "10px",
                 }}
-              ></iframe>
+              />
             </div>
 
             <div className="col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
