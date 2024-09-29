@@ -109,6 +109,10 @@ const activities = [
       "../assets/img/activity/festival/f2.jpg",
       "../assets/img/activity/festival/f3.jpg",
       "../assets/img/activity/festival/f4.jpg",
+      "../assets/img/activity/festival/d1.jpeg",
+      "../assets/img/activity/festival/d2.jpeg",
+      "../assets/img/activity/festival/d3.jpeg",
+      "../assets/img/activity/festival/d4.jpeg",
     ],
   },
   {
@@ -204,6 +208,7 @@ const activities = [
       "../assets/img/activity/sporttime/s5.jpeg",
       "../assets/img/activity/sporttime/s6.jpeg",
       "../assets/img/activity/sporttime/s7.jpeg",
+      "../assets/img/activity/sporttime/soprtim.jpeg",
     ],
   },
   {

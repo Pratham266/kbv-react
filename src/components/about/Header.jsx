@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ title, subTitle }) => {
   return (
     <header className="bg-gradient-dark">
       <div
@@ -14,10 +14,8 @@ const Header = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center mx-auto my-auto">
-              <h1 className="text-white">Empowering Voices, Enriching Lives</h1>
-              <p className="lead mb-4 text-white opacity-8">
-                "Where Every Sound Matters and Every Silence Speaks Volumes"
-              </p>
+              <h1 className="text-white">{title}</h1>
+              <p className="lead mb-4 text-white opacity-8">{subTitle}</p>
 
               {/* <h6 className="text-white mb-2 mt-5">Find us on</h6>
               <div className="d-flex justify-content-center">

@@ -12,6 +12,7 @@ import Activite from "./Pages/Activite.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Volunteers from "./Pages/Volunteers.jsx";
 import PdfOpenPage from "./Pages/PdfOpenPage.jsx";
+import NewsCorner from "./Pages/NewsCorner.jsx";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "intrect-club",
         element: <PdfOpenPage />,
+      },
+      {
+        path: "news-corner",
+        element: <NewsCorner />,
       },
       {
         path: "*", // Catch-all route for 404 errors

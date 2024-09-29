@@ -13,6 +13,7 @@ const PhotoCard = ({ data }) => {
             alt={data.title}
           />
         </PhotoView>
+        {/* <div>{data.title}</div> */}
       </PhotoProvider>
     </div>
   );

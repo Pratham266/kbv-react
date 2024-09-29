@@ -92,7 +92,10 @@ const About = () => {
 
   return (
     <>
-      <Header />
+      <Header
+        title={"Empowering Voices, Enriching Lives"}
+        subTitle={`"Where Every Sound Matters and Every Silence Speaks Volumes"`}
+      />
       <div className="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
         <section className="py-5">
           <div className="container">

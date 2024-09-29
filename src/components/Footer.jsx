@@ -97,7 +97,7 @@ const activities = [
   },
   {
     id: 16,
-    title: "Corona Activity",
+    title: "Corona Time Activity",
     path: "/activite/corona-time",
     tagline: "Corona Awareness Activity",
   },
@@ -236,18 +236,31 @@ const Footer = () => {
                     Gallery
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={"/intrect-club"}>
+                    Interact Club
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={"/news-corner"}>
+                    News Corner
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
-              <h6 className="text-sm">News Letters</h6>
+              <h6 className="text-sm">Reach Us</h6>
               <ul className="flex-column ms-n3 nav">
-                {latters.map((item) => (
-                  <li className="nav-item" key={item.id}>
-                    <a className="nav-link" href={item.path} target="_blank">
-                      {item.title}
-                    </a>
-                  </li>
-                ))}
+                <li className="nav-item">
+                  <Link className="nav-link" to={"/contact"}>
+                    Contact Us
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={"/volunteers"}>
+                    Volunteers
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -281,18 +294,15 @@ const Footer = () => {
           </div>
           <div className="col-md-2 col-sm-6 col-6 mb-4 me-auto">
             <div>
-              <h6 className="text-sm">Reach Us</h6>
+              <h6 className="text-sm">News Letters</h6>
               <ul className="flex-column ms-n3 nav">
-                <li className="nav-item">
-                  <Link className="nav-link" to={"/contact"}>
-                    Contact Us
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={"/volunteers"}>
-                    Volunteers
-                  </Link>
-                </li>
+                {latters.map((item) => (
+                  <li className="nav-item" key={item.id}>
+                    <a className="nav-link" href={item.path} target="_blank">
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

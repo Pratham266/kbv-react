@@ -94,7 +94,7 @@ const activities = [
   },
   {
     id: 16,
-    title: "Corona Activity",
+    title: "Corona Time Activity",
     path: "/activite/corona-time",
     tagline: "Corona Awareness Activity",
   },
@@ -221,7 +221,7 @@ const Navbar = () => {
                       to="/"
                     >
                       <i className="material-icons opacity-6 me-2 text-md">
-                        dashboard
+                        view_day
                       </i>
                       Home
                     </Link>
@@ -240,7 +240,20 @@ const Navbar = () => {
                       Interact Club
                     </Link>
                   </li>
-
+                  <li className="nav-item dropdown dropdown-hover mx-2">
+                    <Link
+                      className="nav-link ps-2 d-flex cursor-pointer align-items-center"
+                      id="dropdownMenuPages"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      to="/news-corner"
+                    >
+                      <i className="material-icons opacity-6 me-2 text-md">
+                        view_day
+                      </i>
+                      News Corner
+                    </Link>
+                  </li>
                   <li className="nav-item dropdown dropdown-hover mx-2">
                     <a
                       className="nav-link ps-2 d-flex cursor-pointer align-items-center"
@@ -303,7 +316,7 @@ const Navbar = () => {
                       onClick={handleActivityToggle}
                     >
                       <i className="material-icons opacity-6 me-2 text-md">
-                        view_day
+                        dashboard
                       </i>
                       Activites
                       <img
