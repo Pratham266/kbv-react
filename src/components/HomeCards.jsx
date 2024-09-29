@@ -83,6 +83,25 @@ const visitors = [
   },
 ];
 
+const wellwishers = [
+  {
+    id: 1,
+    img: "./assets/well/w1.jpeg",
+  },
+  {
+    id: 2,
+    img: "./assets/well/w2.jpeg",
+  },
+  {
+    id: 3,
+    img: "./assets/well/w3.jpeg",
+  },
+  {
+    id: 4,
+    img: "./assets/well/w4.jpeg",
+  },
+];
+
 const HomeCards = () => {
   const navigate = useNavigate();
 
@@ -163,6 +182,91 @@ const HomeCards = () => {
                 renting an Airbnb. That’s the idea behind Rover ...
               </p>
             </div> */}
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </section>
+
+      <section className="my-5">
+        <div className="container">
+          <div className="row">
+            <div className="row text-center my-sm-5 mt-5">
+              <div className="col-lg-6 mx-auto">
+                <span className="badge bg-primary mb-3">Our Well-Wishers</span>
+                <h2 className="">Guiding Us Towards a Brighter Future</h2>
+                <p className="lead">
+                  Our well-wishers play a pivotal role in our school's journey.
+                  Their constant support and positive influence guide us as we
+                  work to nurture the potential of every student. With their
+                  guidance, we are motivated to continue our efforts to create a
+                  thriving learning environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <Carousel
+            responsive={responsive}
+            // additionalTransfrom={0}
+            arrows={false}
+            autoPlay
+            autoPlaySpeed={2500}
+            centerMode={false}
+            className=""
+            containerClass="container-with-dots"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            rewind={false}
+          >
+            {wellwishers.map((itm) => (
+              <div className="" key={itm.id}>
+                <div
+                  className="card card-plain"
+                  style={{ marginBottom: "10px" }}
+                >
+                  <div className=" p-0 position-relative">
+                    <a
+                      className="d-block blur-shadow-image"
+                      style={{
+                        marginTop: "8px",
+                        backgroundColor: "transparent",
+                        borderRadius: "10px",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        height: "215px",
+                        width: "348px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <PhotoProvider>
+                        <PhotoView src={itm.img}>
+                          <img
+                            src={itm.img}
+                            alt={`visitor-img-${itm.id}`}
+                            className="img-fluid shadow border-radius-lg"
+                            loading="lazy"
+                            style={{
+                              height: "210px",
+                              width: "343px",
+                              borderRadius: "10px",
+                              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                            }}
+                          />
+                        </PhotoView>
+                      </PhotoProvider>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
