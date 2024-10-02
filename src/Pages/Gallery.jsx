@@ -290,16 +290,21 @@ const images = [
     title: "Image 74 - KBV",
     url: "./assets/img/school/gallery/74.jpeg",
   },
-  {
-    id: 75,
-    title: "Image 75 - KBV",
-    img: "./assets/img/home/home_1.jpg",
-  },
-  {
-    id: 76,
-    title: "Image 76 - KBV",
-    img: "./assets/img/home/ss1.jpeg",
-  },
+  // {
+  //   id: 75,
+  //   title: "Image 75 - KBV",
+  //   img: "public/assets/img/home/home_1.jpg",
+  // },
+  // {
+  //   id: 76,
+  //   title: "Image 76 - KBV",
+  //   img: "./assets/img/home/ss1.jpeg",
+  // },
+  // {
+  //   id: 77,
+  //   title: "Image 77 - KBV",
+  //   img: "../assets/img/activity/festival/d4.jpeg",
+  // },
 ];
 
 const Gallery = () => {

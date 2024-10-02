@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useGlobalState } from "../context/globalcontex";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const activities = [
   {
@@ -143,6 +145,7 @@ const latters = [
 ];
 
 const Footer = () => {
+  const { setSelectedId } = useGlobalState();
   const openEmail = () => {
     const email = "kbvsite@gmail.com";
     const body = "Hello, KBV";
@@ -161,12 +164,16 @@ const Footer = () => {
           <div className="col-md-3 mb-4 ms-auto">
             <div>
               <a href="javascript:;">
-                <img
-                  src="./assets/img/kbv-logo-1.png"
-                  className="mb-1"
-                  alt="main_logo"
-                  style={{ height: "100px", width: "100px" }}
-                />
+                <PhotoProvider>
+                  <PhotoView src={"../assets/img/kbv-logo-1.png"}>
+                    <img
+                      src="./assets/img/kbv-logo-1.png"
+                      className="mb-1"
+                      alt="main_logo"
+                      style={{ height: "100px", width: "100px" }}
+                    />
+                  </PhotoView>
+                </PhotoProvider>
               </a>
               <h6
                 className="font-weight-bolder mb-4"
@@ -281,7 +288,11 @@ const Footer = () => {
               <ul className="flex-column ms-n3 nav">
                 {activities.slice(0, 8).map((item) => (
                   <li className="nav-item" key={item.id}>
-                    <Link className="nav-link" to={`/activite/${item.id}`}>
+                    <Link
+                      className="nav-link"
+                      to={`/activite`}
+                      onClick={() => setSelectedId(item.id)}
+                    >
                       {item.title}
                     </Link>
                   </li>
@@ -295,7 +306,11 @@ const Footer = () => {
               <ul className="flex-column ms-n3 nav">
                 {activities.slice(8).map((item) => (
                   <li className="nav-item" key={item.id}>
-                    <Link className="nav-link" to={`/activite/${item.id}`}>
+                    <Link
+                      className="nav-link"
+                      to={`/activite`}
+                      onClick={() => setSelectedId(item.id)}
+                    >
                       {item.title}
                     </Link>
                   </li>

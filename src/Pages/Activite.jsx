@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
+import { useGlobalState } from "../context/globalcontex";
 
 const activities = [
   {
@@ -38,7 +38,7 @@ const activities = [
     id: 3,
     title: "Science",
     description:
-      "When I hear I know, when I see I remember, when I do I understand. The science program includes various activities such as clay work, painting, card making, flower vases, glass painting, ceramics work, chalk making, candle making, stitching, embroidery, canvas, and Rangoli.",
+      "When I hear I know, when I see I remember, when I do I understand.The science activity program encourages students to engage in a variety of science fair projects. These projects allow students to explore scientific concepts through hands-on experiments, fostering creativity, critical thinking, and problem-solving skills. From physics experiments to chemistry demonstrations and biology models, students are given the opportunity to present their work at science fairs, where innovation and discovery are celebrated. This approach helps students build a deeper understanding of the scientific process and develop a passion for science.",
     photos: [
       "../assets/img/activity/workshop/w3.jpg",
       "../assets/img/activity/workshop/w4.jpg",
@@ -229,12 +229,13 @@ const activities = [
       "../assets/img/activity/festival/d1.jpeg",
       "../assets/img/activity/festival/d2.jpeg",
       "../assets/img/activity/festival/d3.jpeg",
-      "../assets/img/activity/festival/d4.jpeg",
     ],
   },
 ];
 
 const Activite = () => {
+  const { selectedId } = useGlobalState();
+
   useEffect(() => {
     try {
       const toggleDivMain = document.querySelector(".toggle-class");
@@ -253,10 +254,11 @@ const Activite = () => {
     }
   }, []);
 
-  const { itemId } = useParams(); // Access the itemId parameter
-
-  let current = activities.find((item) => item.id === parseInt(itemId));
-  if (!current) current = activities[0];
+  const current =
+    activities.find((item) => item.id === selectedId) || activities[0];
+  if (!current) {
+    return <p>Loading..</p>;
+  }
 
   return (
     <>
@@ -279,12 +281,17 @@ const Activite = () => {
             <div className="row">
               <div className="col-12 mx-auto">
                 <div className="mt-n8 mt-md-n9 text-center">
-                  <img
-                    className="avatar avatar-xxl shadow-xl position-relative z-index-2"
-                    src="../assets/img/kbv-logo-1.png"
-                    alt="bruce"
-                    loading="lazy"
-                  />
+                  <PhotoProvider>
+                    <PhotoView src={"../assets/img/kbv-logo-1.png"}>
+                      <img
+                        className="avatar avatar-xxl shadow-xl position-relative z-index-2"
+                        src="../assets/img/kbv-logo-1.png"
+                        alt="bruce"
+                        loading="lazy"
+                        style={{ cursor: "pointer" }}
+                      />
+                    </PhotoView>
+                  </PhotoProvider>
                 </div>
                 <div className="row py-5">
                   <div className="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">

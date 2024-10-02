@@ -14,6 +14,7 @@ import Volunteers from "./Pages/Volunteers.jsx";
 import PdfOpenPage from "./Pages/PdfOpenPage.jsx";
 import NewsCorner from "./Pages/NewsCorner.jsx";
 import Infrastructure from "./Pages/Infrastructure.jsx";
+import { GlobalStateProvider } from "./context/globalcontex.js";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
         element: <Gallery />,
       },
       {
-        path: "activite/:itemId",
+        path: "activite",
         element: <Activite />,
       },
       {
@@ -67,7 +68,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <RouterProvider router={router} />
+    <GlobalStateProvider>
+      <RouterProvider router={router} />
+    </GlobalStateProvider>
   </>
 );
 

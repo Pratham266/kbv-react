@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useGlobalState } from "../context/globalcontex";
 
 const activities = [
   {
@@ -107,6 +108,8 @@ const activities = [
 ];
 
 const Navbar = () => {
+  const { setSelectedId } = useGlobalState();
+
   const handlToggle = () => {
     try {
       const toggleDiv = document.querySelector(".toggle-class");
@@ -355,7 +358,8 @@ const Navbar = () => {
                           <Link
                             className="nav-item dropdown dropdown-hover dropdown-subitem"
                             key={item.id}
-                            to={`/activite/${item.id}`}
+                            to={`/activite`}
+                            onClick={() => setSelectedId(item.id)}
                           >
                             <a className="dropdown-item py-2 ps-3 border-radius-md">
                               <div className="w-100 d-flex align-items-center justify-content-between">
@@ -376,7 +380,8 @@ const Navbar = () => {
                         {activities.map((item) => (
                           <Link
                             className="col-md-12"
-                            to={`/activite/${item.id}`}
+                            to={`/activite`}
+                            onClick={() => setSelectedId(item.id)}
                           >
                             <div className="d-flex mb-2">
                               <div className="w-100 d-flex align-items-center justify-content-between">
