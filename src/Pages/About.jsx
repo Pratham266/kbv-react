@@ -189,16 +189,16 @@ const About = () => {
                     To justify this slok and Nobel aim of
                     <b> The MOOK DHWANI TRUST , VADODARA</b> has established the
                     <b>SMT. KAMLABEN BADHIR VIDHYALAYA</b> IN 1974. In 1991{" "}
-                    <b>Smt. Sharable H. Desai Badhir Hostel</b> built to provide
-                    free accommodation with all required facilities. Recently,
-                    there are 121 hearing impaired students in the school. Out
-                    of this 50 hearing impaired boys and girls receive free
-                    staying and food services. In the school, hearing impaired
-                    students are provided primary education and vocational
-                    training. For the overall development of hearing impaired
-                    students in our institution, along with education, small
-                    cottage industries training like tailoring, Candle making,
-                    and handicraft items training are provided in our
+                    <b>Smt. Shardaben H. Desai Badhir Hostel</b> built to
+                    provide free accommodation with all required facilities.
+                    Recently, there are 121 hearing impaired students in the
+                    school. Out of this 50 hearing impaired boys and girls
+                    receive free staying and food services. In the school,
+                    hearing impaired students are provided primary education and
+                    vocational training. For the overall development of hearing
+                    impaired students in our institution, along with education,
+                    small cottage industries training like tailoring, Candle
+                    making, and handicraft items training are provided in our
                     institution. Over and above, for the cultural and physical
                     development of children, at District and At State level,
                     different competitions are organized. Because of same,
