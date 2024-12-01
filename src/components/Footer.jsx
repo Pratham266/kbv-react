@@ -109,6 +109,12 @@ const activities = [
     path: "/activite/day-celebration",
     tagline: "Celebrate Together, Create Memories",
   },
+  {
+    id: 18,
+    title: "Swachhta Divas",
+    path: "/activite/swachhta-divas",
+    tagline: "Clean Spaces, Bright Futures",
+  },
 ];
 
 const latters = [

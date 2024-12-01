@@ -50,6 +50,34 @@ const milestones = [
 
 const visitors = [
   {
+    id: 13,
+    img: "./assets/img/home/new1.jpeg",
+  },
+  {
+    id: 14,
+    img: "./assets/img/home/new2.jpeg",
+  },
+  {
+    id: 15,
+    img: "./assets/img/home/new3.jpeg",
+  },
+  {
+    id: 16,
+    img: "./assets/img/home/new4.jpeg",
+  },
+  {
+    id: 17,
+    img: "./assets/img/home/new5.jpeg",
+  },
+  {
+    id: 18,
+    img: "./assets/img/home/new6.jpeg",
+  },
+  {
+    id: 19,
+    img: "./assets/img/home/new7.jpeg",
+  },
+  {
     id: 1,
     img: "./assets/img/home/home_6.jpg",
   },

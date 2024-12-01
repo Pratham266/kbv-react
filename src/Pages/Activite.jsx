@@ -231,6 +231,17 @@ const activities = [
       "../assets/img/activity/festival/d3.jpeg",
     ],
   },
+  {
+    id: 18,
+    title: "Swachhta Divas",
+    description:
+      "Swachhta Divas is an initiative aimed at promoting cleanliness and environmental awareness among students. This event inspires students to take responsibility for maintaining a clean and healthy environment, both within and beyond the school premises. Through activities such as cleaning drives, awareness campaigns, and creative workshops, the event instills a sense of civic duty and fosters sustainable habits, creating a lasting impact on the community and the environment.",
+    photos: [
+      "../assets/img/activity/swachhatDivas/sd1.jpeg",
+      "../assets/img/activity/swachhatDivas/sd2.jpeg",
+      "../assets/img/activity/swachhatDivas/sd3.jpeg",
+    ],
+  },
 ];
 
 const Activite = () => {

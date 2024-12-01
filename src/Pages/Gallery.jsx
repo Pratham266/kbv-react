@@ -290,21 +290,51 @@ const images = [
     title: "Image 74 - KBV",
     url: "./assets/img/school/gallery/74.jpeg",
   },
-  // {
-  //   id: 75,
-  //   title: "Image 75 - KBV",
-  //   img: "public/assets/img/home/home_1.jpg",
-  // },
-  // {
-  //   id: 76,
-  //   title: "Image 76 - KBV",
-  //   img: "./assets/img/home/ss1.jpeg",
-  // },
-  // {
-  //   id: 77,
-  //   title: "Image 77 - KBV",
-  //   img: "../assets/img/activity/festival/d4.jpeg",
-  // },
+  {
+    id: 75,
+    title: "Image g75 - KBV",
+    url: "./assets/img/gallery-new/g75.jpeg",
+  },
+  {
+    id: 76,
+    title: "Image g76 - KBV",
+    url: "./assets/img/gallery-new/g76.jpeg",
+  },
+  {
+    id: 77,
+    title: "Image g77 - KBV",
+    url: "./assets/img/gallery-new/g77.jpeg",
+  },
+  {
+    id: 78,
+    title: "Image g78 - KBV",
+    url: "./assets/img/gallery-new/g78.jpeg",
+  },
+  {
+    id: 79,
+    title: "Image g79 - KBV",
+    url: "./assets/img/gallery-new/g79.jpeg",
+  },
+  {
+    id: 80,
+    title: "Image g80 - KBV",
+    url: "./assets/img/gallery-new/g80.jpeg",
+  },
+  {
+    id: 81,
+    title: "Image g81 - KBV",
+    url: "./assets/img/gallery-new/g81.jpeg",
+  },
+  {
+    id: 82,
+    title: "Image g82 - KBV",
+    url: "./assets/img/gallery-new/g82.jpeg",
+  },
+  {
+    id: 83,
+    title: "Image g83 - KBV",
+    url: "./assets/img/gallery-new/g83.jpeg",
+  },
 ];
 
 const Gallery = () => {
