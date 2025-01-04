@@ -181,7 +181,8 @@ const Navbar = () => {
                 alt="main_logo"
                 style={{ height: "45px", width: "45px" }}
               />
-              <img
+
+              {/* <img
                 src="./assets/img/hope-logo.png"
                 className="mb-1"
                 alt="main_logo"
@@ -191,7 +192,7 @@ const Navbar = () => {
                   marginLeft: "16px",
                   marginTop: "6px",
                 }}
-              />
+              /> */}
 
               <a
                 className="navbar-brand font-weight-bolder ms-sm-3"
